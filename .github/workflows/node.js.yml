@@ -1,33 +1,14 @@
-# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
-
 on:
-  push:
-    branches: [ master ]
-
+  release:
+    types: [created]
+name: Handle Release
 jobs:
-  build:
+  generate:
+    name: Create release-artifacts
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [16.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-
-    - name: Build
-      run: |
-        npm install
-        npm run-script build
-        npm run-script start
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+    - uses: actions/checkout@master
+    - name: Generate
+      uses: skx/github-action-build@master
       with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: master
-        BRANCH: gh-pages
-        FOLDER: build
+        builder: .github/build
