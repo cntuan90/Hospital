@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhospital=self.webpackChunkhospital||[]).push([[339],{8339:function(n,t,r){r.r(t),r.d(t,{default:function(){return h}});var u=r(8870),e=(r(2791),r(9271)),i=r(6225),c=r(1135),o=(0,i.Z)((function(n){return(0,c.Z)({root:{}})})),f=r(184),h=function(){o(),(0,e.k6)();return(0,f.jsx)(u.Z,{children:(0,f.jsx)("h1",{children:"ShiftBoard"})})}},1135:function(n,t,r){function u(n){return n}r.d(t,{Z:function(){return u}})}}]);
-//# sourceMappingURL=339.daaba365.chunk.js.map

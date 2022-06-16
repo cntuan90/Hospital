@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhospital=self.webpackChunkhospital||[]).push([[114],{9114:function(n,t,u){u.r(t),u.d(t,{default:function(){return s}});var r=u(8870),e=(u(2791),u(9271)),c=u(6225),f=u(1135),i=(0,c.Z)((function(n){return(0,f.Z)({root:{}})})),o=u(184),s=function(){i(),(0,e.k6)();return(0,o.jsx)(r.Z,{children:(0,o.jsx)("h1",{children:"Staff Top"})})}},1135:function(n,t,u){function r(n){return n}u.d(t,{Z:function(){return r}})}}]);
-//# sourceMappingURL=114.8ee4fb3d.chunk.js.map
